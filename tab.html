@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>TEST</title>
+<script src="js/jquery-2.0.3.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/lib/underscore.js"></script>
+<script src="js/lib/backbone.js"></script>
+<script src="js/model.js"></script>
+<script src="js/app.js"></script>
+<script src="js/view.js"></script>
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+<script>
+$(function() {
+  $( "#tabs" ).tabs();
+});
+</script>
+</head>
+<body id="test">
+  <div id="tabs">
+    <ul>
+      <li><a href="#tab1">タブ1</a></li>
+      <li><a href="#tab2">タブ2</a></li>
+      <li><a href="#tab3">タブ3</a></li>
+    </ul>
+    <div id="tab1">
+      <ul id="post_list1" class="post_list">
+      </ul>
+    </div>
+    <div id="tab2">
+      <ul class="post_list">
+      </ul>
+    </div>
+    <div id="tab3">
+      <ul class="post_list">
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
