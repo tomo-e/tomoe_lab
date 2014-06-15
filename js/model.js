@@ -1,4 +1,7 @@
 var PostModel = Backbone.Model.extend({
+  defaults: {
+    title: null
+  }
 });
 
 var PostCollection = Backbone.Collection.extend({

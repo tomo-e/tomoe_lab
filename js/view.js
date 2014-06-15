@@ -2,20 +2,14 @@ var PostView = Backbone.View.extend({
   el: '#post_list1',
   collection: new PostCollection(),
   initialize: function() {
-    this.collection.fetch({
+    var self = this;
+    self.collection.fetch({
       success: function() {
+        _.each(self.collection, function(model) {
 
-      console.log(this.collection);
-      debugger;
+          console.log(self.collection);
+          console.log(model);
 
-        _.each(this.collection, function(model) {
-            var test = this.collection.get('title');
-
-            console.log('test');
-            var li = $('<li>').html(
-              this.collection.get('title')
-            );
-            $('#post_list1').append($li);
         });
       }
     });
